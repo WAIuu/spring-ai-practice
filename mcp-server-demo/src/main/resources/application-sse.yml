@@ -1,0 +1,11 @@
+spring:
+  ai:
+    mcp:
+      server:
+        name: student-server
+        version: 1.0.0
+        stdio: false
+        # 客户端通过SSE方式连接
+        sse-endpoint: /sse
+        # MCP Client 用来向 MCP Server发送请求的地址
+        sse-message-endpoint: /mcp/message

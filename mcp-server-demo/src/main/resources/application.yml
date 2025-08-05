@@ -1,9 +1,7 @@
 spring:
-  main:
-    web-application-type: none
-    banner-mode: off
-  ai:
-    mcp:
-      server:
-        name: student-server
-        version: 1.0.0
+  application:
+    name: mcp-server-demo
+  profiles:
+    active: sse
+server:
+  port: 8080

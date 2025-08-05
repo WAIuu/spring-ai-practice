@@ -1,0 +1,13 @@
+spring:
+  main:
+    # 表示非web应用，不会启动web容器
+    # 默认值为：servlet-传统web，使用Tomcat；等于reactive时，表示是一个响应式web应用，使用WebFlux
+    web-application-type: none
+    # 控制是否展示"spring"横幅，默认为console，即显示在控制台
+    banner-mode: off
+  ai:
+    mcp:
+      server:
+        name: student-server
+        version: 1.0.0
+        stdio: true
