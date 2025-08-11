@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: mcp-client-demo
+  ai:
+    mcp:
+      client:
+        enabled: true
+        name: spring-ai-mcp-client
+        version: 1.0.0
+        request-timeout: 20s
+        toolcallback:
+          enabled: true
+        sse:
+          connections:
+            student-mcp-server:
+              url: http://localhost:8090/sse
+    deepseek:
+      api-key: my-key
+      base-url: base-url
+      chat:
+        options:
+          model: deepseek-v3
+        completions-path: /v1/deepseek/chat/completions
