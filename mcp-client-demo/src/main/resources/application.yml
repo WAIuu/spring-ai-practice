@@ -2,6 +2,12 @@ spring:
   application:
     name: mcp-client-demo
   ai:
+    openai:
+      api-key: sk-8af1863215914a56bc93091ef2bc68c9
+      base-url: https://dashscope.aliyuncs.com/compatible-mode
+      chat:
+        options:
+          model: qwen-max
     mcp:
       client:
         enabled: true
@@ -14,10 +20,10 @@ spring:
           connections:
             student-mcp-server:
               url: http://localhost:8090/sse
-    deepseek:
-      api-key: my-key
-      base-url: base-url
-      chat:
-        options:
-          model: deepseek-v3
-        completions-path: /v1/deepseek/chat/completions
+#    deepseek:
+#      api-key: my-key
+#      base-url: base-url
+#      chat:
+#        options:
+#          model: deepseek-v3
+#        completions-path: /v1/deepseek/chat/completions
