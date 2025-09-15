@@ -41,6 +41,16 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-autoconfigure-model-chat-memory</artifactId>
+        </dependency>
+
         <!-- OpenAI 模型 -->
         <dependency>
             <groupId>org.springframework.ai</groupId>

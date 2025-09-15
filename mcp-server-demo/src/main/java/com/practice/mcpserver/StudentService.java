@@ -35,4 +35,11 @@ public class StudentService {
         return students;
     }
 
+    @Tool(name = "addStudent", description = "新增一名学生")
+    public Student addStudent(String name, String gender,int age, String email) {
+        Student student = new Student(name, gender, age, email);
+        students.add(student);
+        return student;
+    }
+
 }

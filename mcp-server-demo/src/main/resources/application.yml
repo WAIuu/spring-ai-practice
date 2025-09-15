@@ -5,3 +5,7 @@ spring:
     active: sse
 server:
   port: 8090
+logging:
+  level:
+    io.modelcontextprotocol: TRACE
+    org.springframework.ai.mcp: TRACE

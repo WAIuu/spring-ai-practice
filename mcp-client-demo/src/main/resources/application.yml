@@ -27,3 +27,9 @@ spring:
 #        options:
 #          model: deepseek-v3
 #        completions-path: /v1/deepseek/chat/completions
+logging:
+  level:
+#    org.springframework.ai.chat.client.advisor: DEBUG
+    org.springframework.ai.chat: DEBUG   # 打印 ChatClient 交互
+    org.springframework.ai.client: DEBUG # 打印底层请求
+    org.springframework.ai.mcp: DEBUG    # 如果用到 MCP
